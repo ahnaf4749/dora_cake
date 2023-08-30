@@ -41,7 +41,7 @@ const Roadmap = () => {
                         </div>
                     </div>
                     <div className="w-80">
-                        <h2 className="text-center text-[20px] text-white font-bold lg:mt-5 mt-0">1nd Quarter of 2023</h2>
+                        <h2 className="text-center text-[20px] text-white font-bold">1nd Quarter of 2023</h2>
                         <div className="flex justify-between mt-5">
                             <div>
                                 <div className="flex">

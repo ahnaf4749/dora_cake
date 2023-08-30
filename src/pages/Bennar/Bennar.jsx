@@ -1,3 +1,4 @@
+
 // import { useEffect } from 'react';
 import doremon from '../../assets/output-onlinegiftools.gif'
 import { FaTelegram } from 'react-icons/fa';
@@ -103,12 +104,7 @@ const Bennar = () => {
         {
             id: 3,
             image: star
-        },
-        {
-            id: 3,
-            image: star
-        },
-
+        }
     ]
 
 
@@ -137,7 +133,7 @@ const Bennar = () => {
                             <img
                                 alt="Party"
                                 src={doremon}
-                                className="absolute inset-0 h-full w-[500px] object-cover auto"
+                                className="absolute inset-0 h-full w-full object-cover auto"
                             />
                         </div>
 
@@ -180,7 +176,7 @@ const Bennar = () => {
                         </div>
                     </div>
                     <div className='hidden lg:block'>
-                        <div className='flex -mt-16 '>
+                        <div className='flex -mt-12 '>
                             {
                                 allstar.map(item =>
                                     // eslint-disable-next-line react/jsx-key

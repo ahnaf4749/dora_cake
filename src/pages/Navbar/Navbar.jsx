@@ -1,3 +1,4 @@
+import logo from '../../assets/download.png'
 import './Navbar.css'
 const Navbar = () => {
 
@@ -20,13 +21,13 @@ const Navbar = () => {
     );
 
     return (
-        <div className="drawer mx-auto max-w-screen-xl">
+        <div className="drawer  mx-auto max-w-screen-xl">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="w-full navbar navbar-bg">
+                <div className="w-full navbar ">
 
-                    <img className='h-20 w-20' src='https://i.ibb.co/0sx6JW9/images.png' />
+                    <img className='h-20 w-20' src={logo} />
                     <div className="flex-1 text-5xl font-bold text-white"><span className="text-[#CD6501]">$</span>DORA</div>
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
