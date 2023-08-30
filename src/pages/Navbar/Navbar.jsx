@@ -21,7 +21,8 @@ const Navbar = () => {
     );
 
     return (
-        <div className="drawer  mx-auto max-w-screen-xl">
+        <div>
+            <div className="drawer  mx-auto max-w-screen-xl navbar-bg">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
@@ -48,6 +49,7 @@ const Navbar = () => {
                 </ul>
 
             </div>
+        </div>
         </div>
     );
 };
