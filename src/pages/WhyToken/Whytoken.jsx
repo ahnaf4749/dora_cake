@@ -34,7 +34,7 @@ const Whytoken = () => {
             <div className="mx-auto max-w-screen-xl">
                 <div>
                     <div >
-                        <h1 className="text-white text-center text-[40px] font-extrabold">Why <span className="text-[#CD6501]">$DORA</span> Token?</h1>
+                        <h1 className="text-white text-center text-[40px] font-extrabold pt-10">Why <span className="text-[#CD6501]">$DORA</span> Token?</h1>
                     </div>
                     <div className='grid lg:grid-cols-4 md:grid-cols-2 mt-3'>
                         {allData.map(data =>

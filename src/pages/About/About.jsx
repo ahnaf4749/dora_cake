@@ -3,7 +3,7 @@ import moneyImage from '../../assets/POWELLglasses.png'
 
 const About = () => {
     return (
-        <div className="bg-[#75B1D1]">
+        <div className="bg-[#75B1D1]" id='about'>
             <section className="mx-auto max-w-screen-xl">
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
                     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">

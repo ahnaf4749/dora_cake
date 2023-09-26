@@ -12,7 +12,7 @@ import { toast } from 'react-toastify';
 
 
 const Bennar = () => {
-    const [number] = useState('0x5804cD098194Ba02F2F7352C404818F6B0E2a913');
+    const [number] = useState('0x0B052A4920E9d5D714FE80Ec703572D8fD82Fa70');
 
     const handleCopyClick = () => {
         const textField = document.createElement('textarea');
@@ -110,7 +110,7 @@ const Bennar = () => {
 
     return (
         <div>
-            <section className="bg-[#75B1D1]">
+            <section className="bg-[#75B1D1]" id='chart'>
                 <div
                     className="mx-auto max-w-screen-xl"
                 >
@@ -128,12 +128,12 @@ const Bennar = () => {
                     </div>
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                         <div
-                            className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+                            className=" h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full "
                         >
                             <img
                                 alt="Party"
                                 src={doremon}
-                                className="absolute inset-0 h-full w-full object-cover auto"
+                                className=" inset-0 h-full w-full "
                             />
                         </div>
 
@@ -146,8 +146,12 @@ const Bennar = () => {
                             </p>
 
                             <a
+                                href='https://www.pinksale.finance/launchpad/0x237c3a217B08971de59D24399ED9Dd9E2F3f7F04?chain=BSC' target='_blank'
+                                rel='noreferrer'
                                 className="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mb-4"
-                                href="/download"
+
+
+
                             >
                                 <span
                                     className="block rounded-full bg-white text-lg font-semibold hover:bg-transparent py-4 px-10"
@@ -160,14 +164,18 @@ const Bennar = () => {
                                 <FaCopy className='text-[#CD6501] cursor-pointer' />
                             </div>
                             <div className='flex gap-x-9 mt-1 justify-center lg:justify-normal'>
-                                <div className='flex justify-center items-center text-white text-[22px] font-semibold gap-x-1 cursor-pointer hover:text-[#CD6501]'>
-                                    <FaTelegram />
-                                    <p>Telegram</p>
-                                </div>
-                                <div className='flex justify-center items-center text-white text-[22px] font-semibold gap-x-1 cursor-pointer hover:text-[#CD6501]'>
-                                    <FiTwitter />
-                                    <p>Twiter</p>
-                                </div>
+                                <a href='https://t.me/doracake100X' target='_blank' rel="noreferrer">
+                                    <div className='flex justify-center items-center text-white text-[22px] font-semibold gap-x-1 cursor-pointer hover:text-[#CD6501]'>
+                                        <FaTelegram />
+                                        <p>Telegram</p>
+                                    </div>
+                                </a>
+                                <a href='https://twitter.com/DORACAKE283512' target='_blank' rel='noreferrer'>
+                                    <div className='flex justify-center items-center text-white text-[22px] font-semibold gap-x-1 cursor-pointer hover:text-[#CD6501]'>
+                                        <FiTwitter />
+                                        <p>Twiter</p>
+                                    </div>
+                                </a>
                             </div>
                             <div className='flex mt-5 justify-center lg:justify-normal'>
                                 <img className='w-[160px] h-12' src={coinMarket} alt='' />

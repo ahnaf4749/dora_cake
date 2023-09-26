@@ -1,9 +1,7 @@
 .navbar-bg {
-    background: #75B1D1;
-    /* backdrop-filter: blur(25px); */
-    position: fixed;
+    background: #1F3664;
+    position: sticky;
     z-index: 10;
-    /* -webkit-backdrop-filter: blur(25px); */
     top: 0;
-    /* width: 100%; */
+    border-bottom: 2px solid #75B1D1;
 }
