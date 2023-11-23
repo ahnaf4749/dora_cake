@@ -1,42 +1,77 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://i.ibb.co/tQq8KBz/Group.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 129993994;
+  display: grid;
+  place-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.preloader__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.preloader__left {
+  margin-right: 1rem;
+}
+
+.preloader__right {
+  margin-left: 1rem;
+  width: max-content;
+  height: 8rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.preloader__right::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* background-image: linear-gradient(to bottom, #10101a 5%, rgba(16, 16, 26, 0) 30%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.preloader__right::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* background-image: linear-gradient(to top, #10101a 5%, rgba(16, 16, 26, 0) 30%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.preloader__text {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 210%;
+  letter-spacing: 0.19em;
+  color: white;
+  animation: preloaderTextAnim 12s linear;
+  animation-delay: 2s;
+}
+
+@keyframes preloaderTextAnim {
+  0% {
+    transform: translateY (0%);
   }
-  to {
-    transform: rotate(360deg);
+
+  50%,
+  100% {
+    transform: translateY(-600%);
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
